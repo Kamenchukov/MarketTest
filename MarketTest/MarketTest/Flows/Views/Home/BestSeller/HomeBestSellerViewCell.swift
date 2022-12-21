@@ -15,7 +15,7 @@ struct HomeBestSellerViewCell: View {
     var body: some View {
         ZStack{
         RoundedRectangle(cornerRadius: 10)
-                .fill(Color.gray)
+                .fill(Color.white)
                 .frame(width: cell.width, height: cell.height)
             VStack {
                 Image("Ross_Geller")
@@ -43,22 +43,15 @@ struct HomeBestSellerViewCell: View {
 
 struct heartView: View {
     var body: some View {
-        
-//            RoundedRectangle(cornerRadius: 10)
-//                .fill(Color.white)
-//                .frame(width: 25, height: 25)
                 Image(systemName: "heart")
-            .frame(width: 25,height: 25)
+            .frame(width: 30,height: 30)
             .background(.white)
-            .cornerRadius(10)
+            .cornerRadius(15)
             .foregroundColor(Color.orange)
             .offset(x:70, y: -90)
             .onTapGesture {
                 print("heart")
             }
-        
-//            .position(x: 270, y: 285)
-       
     }
 }
 

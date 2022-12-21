@@ -8,9 +8,10 @@
 import UIKit
 
 struct cell {
-   static let column = 3
-    static let row   = 9
-    static let padding : CGFloat = 20
-    static let spacing : CGFloat = 20
-   static  let width = (UIScreen.main.bounds.width/CGFloat(column))-padding
+   static let column = 2
+    static let row   = 2
+    static let padding : CGFloat = 12
+    static let spacing : CGFloat = 14
+    static let width = CGFloat(181)
+    static let height = CGFloat(227)
 }

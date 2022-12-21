@@ -13,6 +13,7 @@ struct HomeStoreView: View {
     @State var show3 = false
     @State var show4 = false
     @State var show5 = false
+    
     var body: some View {
         NavigationView {
             ScrollView(.horizontal) {
@@ -132,13 +133,14 @@ struct HomeStoreView: View {
                             .font(Font.custom("Mark Pro", size: 12))
                             .foregroundColor(show1 ? selfColors.orange : selfColors.deepBlue)
                     }
+                    .navigationTitle("Select Category")
+                    .font(Font.custom("Mark Pro Heavy", size: 25))
                 }.padding(27)
+                    
                   
-            }  .navigationTitle("Select Category")
-                .font(Font.custom("Mark Pro Heavy", size: 25))
-                .background {
-                    Color.green
-                   }
+            }
+//            .navigationTitle("Select Category")
+//            .font(Font.custom("Mark Pro Heavy", size: 25))
         }
     }
 }
